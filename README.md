@@ -1,5 +1,5 @@
-# Name: Md. Mahfuz
-# Id: 0432310005101057
+# Name: Md. Rifat Hassan
+# Id: 0432310005101064
 # Computer Graphics and Animations - Modern OpenGL
 
 This repository contains my work on **Modern OpenGL 3.3** based on the problems and exercises from [learnopengl.com](https://learnopengl.com/). The projects and lab works are based on the CSE 357/358 course (Sessional Based on Computer Graphics and Animations). All credit for the course content goes to the instructor [AudityGhosh, Lecturer, UITS](https://uits.edu.bd) and [learnopengl.com](https://learnopengl.com/).

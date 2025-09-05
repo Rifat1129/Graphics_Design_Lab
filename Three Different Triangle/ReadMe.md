@@ -1,22 +1,74 @@
+# Name: Md. Rifat Hassan
+# Id: 0432310005101064
+# Computer Graphics and Animations - Modern OpenGL
 
-# Setup
+This repository contains my work on **Modern OpenGL 3.3** based on the problems and exercises from [learnopengl.com](https://learnopengl.com/). The projects and lab works are based on the CSE 357/358 course (Sessional Based on Computer Graphics and Animations). All credit for the course content goes to the instructor [AudityGhosh, Lecturer, UITS](https://uits.edu.bd) and [learnopengl.com](https://learnopengl.com/).
 
-## 1.  Windows ##
+### Project Overview
 
-   * ### Download glfw libray from https://www.glfw.org/download.html. Download *64-bit Windows binaries* from *Windows pre-compiled binaries*. ###  
-   * ### Create **build** and **lib** folder in Code Repo. Put *glfw3.dll* from *lib-mingw-w64* folder of glfw library to **build** and **lib** folder.  ###
-   * ### For C++ compiler and make, Download MSYS2 Package Manager from https://www.msys2.org/ . ###  
-   * ### Run following commands in MSYS2 terminal: ```pacman -S base-devel``` and ```pacman -S gcc``` . ### 
-   * ### add your bin folder (which includes g++.exe and make.exe) PATH (C:\msys64\usr\bin) of msys64 installation directory in your environment variable.
-   * ### Run ```make win``` in Terminal. ###
-   * ### ```.exe``` file will be in **build** folder. ###
-   * ### if your code does not run, then you have to check openGL version by installing GLview from http://www.realtech-vr.com/home/glview . If your openGL version is below 3.3, then update windows. ### 
-   * ### ***if compiler says it cannot find khrplatform.h, then put this file https://github.com/nahin100/17-CSE4202/blob/main/Lab0/include/khrplatform.h in *include* folder. Also, change header file statement from ```#include <KHR/khrplatform.h>``` to ```#include "khrplatform.h"``` in *glad.h* file in include folder*** ### 
-   
-​
-## 2. Linux ##
+The repository covers a variety of topics, including:
 
-   * ### Run following command in Terminal:  ```sudo apt-get install libglfw3-dev``` ###  
-   * ### Create **build** and **lib** folder in Code Repo. ###
-   * ### Run ```make linux``` in terminal. ###
-   * ### executable file will be in **build** folder. ###
+- Basic Window Creation
+- Basic Triangle Creation
+- VAO, VBO, EBO
+- Shaders
+- Textures
+- Transformations
+- Interpolation
+- Coordinate Systems
+- 3D Objects Rendering
+
+Each problem folder contains the source code and relevant shader files, along with explanations or instructions on how to run them.
+
+## Folder Structure
+
+The folder structure is organized as follows:
+
+```
+Computer_Graphics_and_Animations_Modern_OpenGL/
+├── README.md
+├── Problem/
+│   ├── shader.fs
+│   ├── shader.vs
+│   ├── glad.c
+│   ├── main.cpp
+```
+
+### File Descriptions
+
+- **.cpp Files**: These contain the main C++ code to set up the OpenGL window, shaders, and transformations.
+- **.fs and .vs Files**: These are the fragment and vertex shader files for handling graphical rendering.
+- **glad.c**: This file is used to load OpenGL functions.
+
+
+### How to Use
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/AudityGhosh/Computer_Graphics_and_Animations_Modern_OpenGL.git
+    ```
+
+2. Navigate to the problem directory and compile the code:
+
+    For **C++ solutions**:
+
+    ```bash
+    g++ main.cpp -o program
+    ./program
+    ```
+
+    For **Shader files**, make sure to link the appropriate shader files and resources as needed in the `main.cpp` file.
+
+### Contributing
+
+Feel free to fork the repository and contribute by adding improvements, fixes, or new exercises. Submit a pull request for any contributions.
+
+### License
+
+This project is open-source and available under the MIT License.
+
+
+**Note**: This repository is for educational purposes and includes all the lab works and exercises as part of the CSE 347/358 course.
+
+
